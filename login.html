@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大事件-登录/注册</title>
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- 引入自己的js -->
+    <script src="./assets/js/login.js"></script>
+    <script src="./assets/js/baseAPI.js"></script>
+</head>
+
+<body>
+    <!-- 头部的logo区域 -->
+    <div class="container">
+        <img src="./assets/images/logo.png" alt="">
+    </div>
+    <!-- 登录注册框 -->
+    <div class="loginAndRegBox">
+        <div class="title-box"></div>
+        <div class="login-box">
+            <form id="form_login">
+                <div class="form-group">
+                    <svg class="bi bi-person-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                      </svg>
+                    <input type="text" name="username" class="form-control" placeholder="请输入用户名">
+                </div>
+                <div class="form-group">
+                    <svg class="bi bi-lock-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="11" height="9" x="2.5" y="7" rx="2"/>
+                        <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+                      </svg>
+                    <input type="password" name="password" class="form-control" placeholder="请输入密码" autocomplete="off">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">登录</button>
+            </form>
+            <div class="links mt-2">
+                <a href="javascript:;" id="link_reg">去注册账号</a>
+            </div>
+        </div>
+        <div class="reg-box">
+            <form id="form_reg">
+                <!-- 用户名 -->
+                <div class="form-group">
+                    <svg class="bi bi-person-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                      </svg>
+                    <input type="text" name="username" class="form-control" placeholder="请输入用户名">
+                </div>
+                <!-- 密码框 -->
+                <div class="form-group">
+                    <svg class="bi bi-lock-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="11" height="9" x="2.5" y="7" rx="2"/>
+                        <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+                      </svg>
+                    <input type="password" name="password" class="form-control" placeholder="请输入密码" autocomplete="off">
+                </div>
+                <!-- 确认密码框 -->
+                <div class="form-group">
+                    <svg class="bi bi-lock-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="11" height="9" x="2.5" y="7" rx="2"/>
+                        <path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+                      </svg>
+                    <input type="password" name="repassword" class="form-control" placeholder="请确认密码" autocomplete="off">
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">注册</button>
+            </form>
+            <div class="links mt-2">
+                <a href="javascript:;" id="link_login">去登录</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
