@@ -13,41 +13,43 @@ body {
     height: 310px;
     background-color: #fff;
     position: absolute;
-    top: 50%;
     left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
 }
 
 .title-box {
     height: 60px;
-    background: url(/assets/images/login_title.png) no-repeat center;
+    background: url('/assets/images/login_title.png') no-repeat center;
 }
 
 .reg-box {
     display: none;
 }
 
-.login-box,
-.reg-box {
+.layui-form {
     padding: 0 30px;
 }
 
 .links {
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.links a {
     font-size: 12px;
 }
 
-.form-group {
+.layui-form-item {
     position: relative;
 }
 
-.form-group svg {
+.layui-icon {
     position: absolute;
-    top: 10px;
     left: 10px;
-    font-size: 16px;
+    top: 10px;
 }
 
-.form-group input {
+.layui-input {
     padding-left: 32px;
 }
